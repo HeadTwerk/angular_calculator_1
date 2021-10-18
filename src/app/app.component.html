@@ -1,0 +1,32 @@
+<body>
+<div id="bg" style="text-align: center;">
+  <h1>
+    {{title}}
+  </h1>
+  <input type="number" placeholder="First Number" name="num1" [(ngModel)]="num1">
+  <input type="number" placeholder="Second Number" name="num2" [(ngModel)]="num2">
+  <br> <br>
+  <div id="but">
+    <button (click)="add()" id="a">Add</button>
+    <button (click)="subtract()" id="b">Subtract</button>
+    <button (click)="multiply()" id="c">Multiply</button>
+    <button (click)="divide()" id="d">Divide</button>
+    <button (click)="fact()" id="e">Factorial</button>
+    <button (click)="prime()" id="f">Check Prime or Not</button>
+  </div>
+  <br> <br>
+  <div id="result">
+      <h4 *ngIf="check==0">Sum is {{sum}}</h4>
+      <h4 *ngIf="check==1">Difference is {{dif}}</h4>
+      <h4 *ngIf="check==2">Product is {{prod}}</h4>
+      <h4 *ngIf="check==3">Quotient is {{div}}</h4>
+      <h4 *ngIf="check==4">Factorial of {{num1}} is {{fact1}}</h4>
+      <h4 *ngIf="check==4">Factorial of {{num2}} is {{fact2}}</h4>
+      <h4 *ngIf="flag1==0 && check==5">{{num1}} is Prime number</h4>
+      <h4 *ngIf=" flag1 != 0 && check==5">{{num1}} is Composite number</h4>
+      <h4 *ngIf="flag2 == 0 && check==5">{{num2}} is Prime number</h4>
+      <h4 *ngIf="flag2 != 0 && check==5">{{num2}} is Composite number</h4>
+  </div>
+  
+</div>
+</body>

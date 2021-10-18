@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    color: salmon;
+    font-size: 60px;
+}
+h4{
+    font-size: 30px;
+    color: salmon;
+}
+input{
+    font-size: 20px;
+}
+#a{
+    padding: 5px 10px;
+}
+#b{
+    padding: 5px 10px;
+}
+#c{
+    padding: 5px 10px;
+}
+#d{
+    padding: 5px 10px;
+}
+#e{
+    padding: 5px 10px;
+}
+#f{
+    padding: 5px 10px;
+}
